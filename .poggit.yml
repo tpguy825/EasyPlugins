@@ -1,0 +1,10 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/tpguy825/EasyPlugins
+build-by-default: true
+branches:
+- main
+projects:
+  EasyPlugins:
+    path: ""
+    model: virion
+    type: library
+...
