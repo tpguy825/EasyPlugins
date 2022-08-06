@@ -2,6 +2,8 @@
 
 namespace tpguy825\EasyPlugins;
 
+use pocketmine\lang\Translatable;
+
 class CommandInfo {
     /**
      * @var string $desc Description of the command
@@ -27,7 +29,7 @@ class CommandInfo {
      * @param string $usage How to use the command (e.g. "/command <arg1> <arg2>")
      * @param string[] $aliases Aliases of the command
      */
-    public function __construct(string $command, string $desc, string $usage, array $aliases = []) {
+    public function __construct(string $command, string|Translatable $desc, string|Translatable $usage, array $aliases = []) {
         $this->command = $command;
         $this->desc = $desc;
         $this->usage = $usage;
