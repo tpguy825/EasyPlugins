@@ -18,9 +18,6 @@ class EasyPluginsCommand extends Command {
             return true;
         } else {
             $this->pluginbase->getLogger()->warning("Command " . $this->getName() . " not found in EasyPlugins, but executed using EasyPluginsCommand class");
-            var_dump($this->main);
-            file_put_contents($this->pluginbase->getDataFolder()."commands.json", json_encode($this->pluginbase->getServer()->getCommandMap()->getCommands(), JSON_PRETTY_PRINT));
-           var_dump($this->main);
             return false;
         }
     }
